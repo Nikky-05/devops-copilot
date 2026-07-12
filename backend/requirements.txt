@@ -1,0 +1,26 @@
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.9.2
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# Step 3: LLM
+anthropic>=0.50.0
+langchain-anthropic>=0.3.0
+langchain-ollama>=0.2.0
+langchain-core>=0.3.0
+
+# Step 4: RAG
+langchain-chroma>=0.1.4
+langchain-huggingface>=0.1.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+
+# Step 5: Integrations (GitHub, filesystem, Postgres, Docker, Kubernetes)
+requests>=2.32.0
+psycopg[binary]>=3.2.0
+docker>=7.1.0
+kubernetes>=31.0.0
+
+# Step 6: Agent framework
+langgraph>=0.2.50

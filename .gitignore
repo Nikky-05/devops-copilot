@@ -1,0 +1,112 @@
+# ===== Secrets & Env =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===== Python (backend) =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Type checkers / linters
+.mypy_cache/
+.dmypy.json
+.pyre/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ===== Node / React (frontend) =====
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+*.local
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== RAG / Vector store data =====
+backend/data/chroma/
+backend/data/chromadb/
+backend/data/vectorstore/
+*.sqlite
+*.sqlite3
+*.db
+
+# Keep folder structure but ignore ingested docs
+backend/data/deployment_docs/*
+!backend/data/deployment_docs/.gitkeep
+backend/data/runbooks/*
+!backend/data/runbooks/.gitkeep
+
+# ===== Logs =====
+logs/
+*.log
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== Docker =====
+*.pid
+
+# ===== Misc =====
+.cache/
+tmp/
+temp/
